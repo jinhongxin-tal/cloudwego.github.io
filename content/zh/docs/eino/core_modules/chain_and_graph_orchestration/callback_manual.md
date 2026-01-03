@@ -259,7 +259,7 @@ func (cm *ChatModel) Stream(ctx context.Context, in []*schema.Message, opts ...f
 }
 ```
 
-可以看到 Generate 调用时，触发的是 OnEnd，而 Stream 调用时，触发的是 OneEndWithStreamOutput：
+可以看到 Generate 调用时，触发的是 OnEnd，而 Stream 调用时，触发的是 OnEndWithStreamOutput：
 
 组件实现内部触发 Callbacks 时:
 
